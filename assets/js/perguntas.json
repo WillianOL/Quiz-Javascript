@@ -1,0 +1,22 @@
+[
+    {
+        "pergunta": "JavaScript é uma linguagem de script <span>que roda no lado do cliente e do servidor.</span>",
+        "resposta": "true"
+    },
+    {
+        "pergunta": "JavaScript é uma linguagem fortemente tipada, ou seja, <span>é necessário declarar o tipo de cada variável.</span>",
+        "resposta": "false"
+    },
+    {
+        "pergunta": "JavaScript usa o operador <span>&&</span> para representar a <span>operação lógica AND.</span>",
+        "resposta": "true"
+    },
+    {
+        "pergunta": "JavaScript é uma linguagem compilada, ou seja, <span>o código fonte é transformado em código de máquina antes de ser executado.</span>",
+        "resposta": "false"
+    },
+    {
+        "pergunta": "JavaScript usa o operador <span>!</span> para representar a <span>operação lógica NOT.</span>",
+        "resposta": "true"
+    }    
+]

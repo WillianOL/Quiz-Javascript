@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira:wght@300;400;500&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Saira", Arial, monospace;
+}
+
+:root{
+    --corFundo: #B0BEBF;
+    --corFundoConteiner: #262626;
+    --corJavaScript: rgba(255, 234, 0, 0.955);
+    --corBotaoVerde: #126173;
+    --corBotaoVermelho: rgb(202, 51, 51); 
+}
+
+.conteiner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--corFundo);
+}
+
+.conteiner section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--corFundoConteiner);
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.222);
+    padding: 20px 40px;
+    border-radius: 20px;
+    color: rgba(255, 255, 255, 0.937);
+}
+
+.conteiner section.sectionPergunta{
+    max-width: 900px;
+    padding: 30px 50px;
+    animation: perguntaAparece 1s ease forwards;
+}
+
+.conteiner section.sectionPergunta p{
+    padding: 20px 10px;
+    border-radius: 20px;
+}
+
+.conteiner section.sectionPergunta p span{
+    color: var(--corJavaScript);
+}
+
+@keyframes perguntaAparece {
+    from{
+        opacity: 0;
+        transform: translateX(-300px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.conteiner section h1{
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+.conteiner section h1 span{
+    color: var(--corJavaScript);
+}
+
+.conteiner section p{
+    font-size: 1.4rem;
+    margin-bottom: 30px;
+}
+
+.conteiner section div.botao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteiner section div.botao a{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--corBotaoVerde);
+    color: white;
+    text-decoration: none;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 1.1rem;
+    transition: all .3s ease;
+}
+
+.conteiner section div.botao a > img{
+    width: 35px;
+    transform: rotate(10deg);
+}
+
+.conteiner section div.botao a:hover{
+    letter-spacing: 2px;
+    background-color: #19859d;
+}
+
+.botoes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.botoes a{
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.1rem;
+    min-width: 120px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: var(--corBotaoVerde);
+    color: white;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.botoes a:nth-child(1){
+    background-color: rgb(242, 56, 56);
+}
+
+.botoes a:hover{
+    transform: scale(1.15) translateY(-4px);
+    border-color: white;
+}
+
+.conteiner section div:nth-child(2) img{
+    width: 400px;
+}
+
+.respostaErrada{
+    border: 4px solid red;
+    animation: respostaErrada .3s ease alternate-reverse !important;
+}
+
+@keyframes respostaErrada {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-20px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+.recomecarQuiz div{
+    text-align: center;
+}
+
+.recomecarQuiz h1 span {
+    color: var(--corJavaScript);
+}
