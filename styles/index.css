@@ -167,4 +167,8 @@
     .conteiner section div:nth-child(2) img{
         width: 50vw;
     }
+
+    .conteiner section {
+        margin: 0px 10px;
+    }
 }
