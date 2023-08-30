@@ -27,6 +27,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap-reverse;
     background-color: var(--corFundoConteiner);
     box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.222);
     padding: 20px 40px;
@@ -134,7 +135,7 @@
 }
 
 .conteiner section div:nth-child(2) img{
-    width: 400px;
+    width: 30vw;
 }
 
 .respostaErrada{
@@ -160,4 +161,10 @@
 
 .recomecarQuiz h1 span {
     color: var(--corJavaScript);
+}
+
+@media (max-width: 600px){
+    .conteiner section div:nth-child(2) img{
+        width: 50vw;
+    }
 }
