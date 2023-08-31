@@ -86,9 +86,12 @@
 			<br>
 			<img align="center" src="https://github.com/WillianOL/Quiz-Javascript/assets/112639055/9d6a4435-1cda-4bf4-889e-32ec8d647753" width="650px">
 		</div>
-		<p>Depois, mais duas variáveis são criadas, "antigoConteudo" que pega o novo </p>
+		<p>Depois, mais duas variáveis são criadas, "antigoConteudo" que pega o conteiner onde ficará o novo HTML, e "novoConteudo" que pega o mesmo conteiner só que do HTML novo(Os dois HTML's tem que ter o mesmo elemento com a classe ".conteiner"). Depois o titulo da página recebe o titulo novo e é feito um innerHTML passando o conteudo novo para o que já está na página.</p>
+		<div align="center">
+			<img align="center" src="" width="650px">
+		</div>
 	</article>
-
+	
 </section>
 
 
