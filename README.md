@@ -77,7 +77,33 @@
 			<img align="center" src="https://github.com/WillianOL/Quiz-Javascript/assets/112639055/df33f19e-7ed8-48a5-afa4-6b4b351499ba" width="650px">
 		</div>
 	</article>
+	<article>
+		<h4>Função trocarDePagina()</h4>
+		<p>Essa função é responsável por fazer a troca de página sem atualizar a mesma. Ela possui o parâmetro "html" que é o HTML em forma de texto passado pela função pergarUrl(). Na função, primeiro é criada a variável "novoHtml" que cria um elemento section, depois o novoHtml recebe o html em texto com um .innerHTML.</p>
+		<div align="center">
+			<img align="center" src="https://github.com/WillianOL/Quiz-Javascript/assets/112639055/4f2d34d9-2406-41d3-9b02-9432b58eb13e" width="650px">
+			<br>
+			<br>
+			<img align="center" src="https://github.com/WillianOL/Quiz-Javascript/assets/112639055/9d6a4435-1cda-4bf4-889e-32ec8d647753" width="650px">
+		</div>
+		<p>Depois, mais duas variáveis são criadas, "antigoConteudo" que pega o novo </p>
+	</article>
+
 </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
