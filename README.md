@@ -54,7 +54,7 @@
 		<li><strong>quizPage.html</strong> - página onde vão ser colocadas as perguntas;</li>
 		<li><strong>paginaDeRecomecar.html</strong> - página final, onde pode-se recomeçar o quiz;</li>
 	</ul>
-	<p>Depois, separei o javascript em módulos pois achei melhor para trabalhar e depois dar manuntenção ao código. Então criei o arquivo <strong>"trocarDePagina.js"</strong> onde ficará o código para trocar de página. Nele, peguei primeiro criei uma variável que pegará o elemento que tiver a classe <strong>"buttonStart"</strong>(botao para iniciar o quiz).</p>
+	<p>Depois, separei o javascript em módulos pois achei melhor para trabalhar e depois dar manuntenção ao código. Então criei o arquivo <strong>"trocarDePagina.js"</strong> onde ficará o código para trocar de página. Nele, primeiro criei uma variável que pegará o elemento que tiver a classe <strong>"buttonStart"</strong>(botao para iniciar o quiz).</p>
  	<div align="center">
 		<img align="center" src="https://github.com/WillianOL/Quiz-Javascript/assets/112639055/e3a99259-fcd0-47f2-af81-0b586d41e7db" width="650px">
 	</div>
@@ -65,14 +65,14 @@
 	</div>
 	<article>
 		<h4>Função cliqueAleatorio()</h4>
-		<p>Na função, foi passado o parâmetro <strong>"event"</strong>. No seu escopo, primeiro foi tirado o comportamento padrão do event(botão clicado) que é um link(<a>) com o <strong>".preventDefault()"</strong>. Depois, a função pegarUrl é chamada passando o href do botão clicado como argumento. E passando o mesmo href como state na history API.</p>
+		<p>Passando como parâmetro o "event", ela é responsável por pegar qualquer clique no botão e chamar a função pegarUrl() passando como parâmetro o href do event. Nela também é passado o mesmo link no history para mudar a URL do navegador sem dar refresh na página.</p>
 		<div align="center">
 			<img align="center" src="https://github.com/WillianOL/Quiz-Javascript/assets/112639055/080fa4bd-ad2a-40f8-a154-08126eea9ec4" width="650px">
 		</div>
 	</article>
 	<article>
 		<h4>Função pegarUrl()</h4>
-		<p>Essa é a função responsável por pegar a url através da requisição http feach e transformala em texto. Ou seja, ela vai pegar o html da página e transformar em texto. Como é uma requisição, a função é assincrona e utilizei o async e o await. No final, a função trocarDePagina é chamada passando o html em texto como argumento.</p>
+		<p>Essa é a função responsável por pegar a url através da requisição http feach e transformá-la em texto. Ou seja, ela vai pegar o html da página de destino e transformar em texto. Como é uma requisição, a função é assincrona e o que retorna é uma promise, utilizei o async e o await. No final, a função trocarDePagina é chamada passando o html em texto como argumento.</p>
 		<div align="center">
 			<img align="center" src="https://github.com/WillianOL/Quiz-Javascript/assets/112639055/df33f19e-7ed8-48a5-afa4-6b4b351499ba" width="650px">
 		</div>
