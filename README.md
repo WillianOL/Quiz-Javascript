@@ -119,8 +119,17 @@
 		<div align="center">
 			<img align="center" src="https://github.com/WillianOL/Quiz-Javascript/assets/112639055/fa39620d-febd-4c70-a9dd-7b1ff5e6b4da" width="650px">
 		</div>
+		<p>Depois disso, a função colocarPerguntas() é executada.</p>
+	</article>
+	<article>
+		<h4>Função colocarPerguntas()</h4>
+		<p>A função <strong>colocarPerguntas</strong> é assincrona. Ela serve para pegar as peguntas do arquivo JSON e exibilas na tela de acordo com o valor da variável contadorDaPergunta. Nela usei a seguinte lógica: Atribui o valor da variável contadorDaPergunta em outra variável(numeroDaPergunta). Toda a vez que o código é iniciado o contadorDaPergunta recebe +1, porém o numeroDaPergunta ainda continua com seu valor anterior; Por exemplo, no primeiro ciclo o contador começa como 0, pegando o primeiro objeto(pergunta) do arquivo JSON e exibindo em tela, no segundo ciclo começa com +1 e pega o segundo objeto(pergunta).</p>
+		<div align="center">
+			<img align="center" src="https://github.com/WillianOL/Quiz-Javascript/assets/112639055/0ce91499-184e-4519-bae4-108c3e76237a" width="650px">
+		</div>
 	</article>
 </section>
+
 
 
 
