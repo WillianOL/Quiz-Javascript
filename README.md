@@ -46,7 +46,7 @@
 
 ## <img align="center" width="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg"> JavaScript
 
-<h3>Troca de página</h3>
+<h3>Código para trocar de página sem recarregar</h3>
 <section>
 	<p>Neste projeto, criei a troca de página sem precisar recarregar a mesma. Para fazer isso, primeiro criei as três páginas HTML. São elas:</p>
 	<ul>
@@ -88,10 +88,38 @@
 		</div>
 		<p>Depois, mais duas variáveis são criadas, "antigoConteudo" que pega o conteiner onde ficará o novo HTML, e "novoConteudo" que pega o mesmo conteiner só que do HTML novo(Os dois HTML's tem que ter o mesmo elemento com a classe ".conteiner"). Depois o titulo da página recebe o titulo novo e é feito um innerHTML passando o conteudo novo para o que já está na página.</p>
 		<div align="center">
-			<img align="center" src="" width="650px">
+			<img align="center" src="https://github.com/WillianOL/Quiz-Javascript/assets/112639055/4c892991-57da-4109-9756-4ce9d7efbdd0" width="650px">
+		</div>
+		<p>O arquivo do código das perguntas foi importado neste. Depois executado ao final da troca de página, pois assim evita que ocorra o erro do código carregar mais rápido que a trocar de página, então é executado somente quando a página carregar, ou seja, na função "trocaDePagina()".</p>
+		<div align="center">
+			<img align="center" src="https://github.com/WillianOL/Quiz-Javascript/assets/112639055/95597d85-5b30-4560-97ad-b3aa0b2528d8" width="650px">
 		</div>
 	</article>
-	
+</section>
+
+<h3>Código do funcionamento das perguntas</h3>
+<section>
+	<article>
+		<h4>Arquivo JSON das perguntas</h4>
+		<p>Para armazenar as peguntas, criei um arquivo JSON. Nele, possui objetos com as perguntas com suas respostas, armezenando um valor booleano. Ele possui cinco perguntas, porém é possível adicionar ou remover perguntas, pois o código é flexivel nesse quesito.</p>
+		<div align="center">
+			<img align="center" src="https://github.com/WillianOL/Quiz-Javascript/assets/112639055/d803ee43-307b-405b-a2ac-d4f3d40004cb" width="650px">
+		</div>
+	</article>
+	<article>
+		<h4>Variáveis importantes</h4>
+		<p>Primeiro, para a elaboração do código para exibir e responder as perguntas, criei cinco variáveis imprtantes. São elas:</p>
+		<ul>
+			<li><strong>numeroIndicadorDaPergunta</strong> - Pega o h1 onde ficará o número indicador da pergunta. EX: Pergunta 1º, 2º ...;</li>
+			<li><strong>paragrafoDaPergunta</strong> - Paragrafo onde será colocado a pergunta;</li>
+			<li><strong>botoesResposta</strong> - Botões para responder a pergunta. (verdadeiro ou falso);</li>
+			<li><strong>perguntaSelecionada</strong> - Variável que armazenará a pergunta do arquivo JSON;</li>
+			<li><strong>contadorDaPergunta</strong> - variável onde ficará o número que indicará qual é a pergunta que o usuário está, começando com 0 pois é a partir dos index de uma array.</li>
+		</ul>
+		<div align="center">
+			<img align="center" src="https://github.com/WillianOL/Quiz-Javascript/assets/112639055/fa39620d-febd-4c70-a9dd-7b1ff5e6b4da" width="650px">
+		</div>
+	</article>
 </section>
 
 
