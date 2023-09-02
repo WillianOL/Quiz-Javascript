@@ -8,6 +8,7 @@ export default function initTrocarDePagina() {
         pegarUrl(event.target.href)
         window.history.pushState(null, null, event.target.href)
     }
+    playButton.addEventListener("click", cliqueAleatorio)
 
     async function pegarUrl(url) {
         const resposta = await fetch(url)
@@ -26,8 +27,6 @@ export default function initTrocarDePagina() {
         
         initPerguntas();
     }
-
-    playButton.addEventListener("click", cliqueAleatorio)
 
     window.addEventListener("popstate", () => {
         pegarUrl(window.location.href)
