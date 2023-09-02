@@ -119,15 +119,55 @@
 		<div align="center">
 			<img align="center" src="https://github.com/WillianOL/Quiz-Javascript/assets/112639055/fa39620d-febd-4c70-a9dd-7b1ff5e6b4da" width="650px">
 		</div>
+		&nbsp;
 		<p>Depois disso, a função colocarPerguntas() é executada.</p>
 	</article>
 	<article>
 		<h4>Função colocarPerguntas()</h4>
-		<p>A função <strong>colocarPerguntas</strong> é assincrona. Ela serve para pegar as peguntas do arquivo JSON e exibilas na tela de acordo com o valor da variável contadorDaPergunta. Nela usei a seguinte lógica: Atribui o valor da variável contadorDaPergunta em outra variável(numeroDaPergunta). Toda a vez que o código é iniciado o contadorDaPergunta recebe +1, porém o numeroDaPergunta ainda continua com seu valor anterior; Por exemplo, no primeiro ciclo o contador começa como 0, pegando o primeiro objeto(pergunta) do arquivo JSON e exibindo em tela, no segundo ciclo começa com +1 e pega o segundo objeto(pergunta).</p>
+		<p>A função <strong>colocarPerguntas</strong> é assincrona. Ela serve para pegar as peguntas do arquivo JSON e exibilas na tela de acordo com o valor da variável contadorDaPergunta. Nela usei a seguinte lógica: Atribui o valor da variável contadorDaPergunta em outra variável(numeroDaPergunta), então toda a vez que o código é iniciado o contadorDaPergunta recebe +1, porém o numeroDaPergunta ainda continua com seu valor anterior; Por exemplo, na primeira execução o contador começa como 0, pegando o primeiro objeto(pergunta) do arquivo JSON e exibindo em tela, na segunda execução começa com +1 e pega o segundo objeto(pergunta) e assim sucessivamente.</p>
 		<div align="center">
 			<img align="center" src="https://github.com/WillianOL/Quiz-Javascript/assets/112639055/0ce91499-184e-4519-bae4-108c3e76237a" width="650px">
 		</div>
+		&nbsp;
+		<p>Seguindo, a variável perguntaSelecionada recebe o objeto com a pergunta para ser utilizado mais a frente no código. Para identificar que as perguntas acabaram e recomeçar o quiz, criei uma estrutura condicional utilizando a seguinte lógica: Se o número da pergunta for igual ao número de perguntas no arquivo json(jsonPerguntas), executa a função "recomecarQuiz" passando o href da página de recomeçar.</p>
+		<div align="center">
+			<img align="center" src="https://github.com/WillianOL/Quiz-Javascript/assets/112639055/cef755f1-212f-447e-ab63-0a0263982782" width="650px">
+		</div>
 	</article>
+	<article>
+		<h4>Função responderPergunta()</h4>
+		<p>A função responderPergunta serve para pegar a resposta do usuário (verdadeiro ou falso) e comparar com a resposta da pergunta, acertando ou errando. Dependendo da resposta ela da um play em um efeito sonoro de errado ou correto.</p>
+		<p>Para executar a função, primeiro fiz um forEach na variável botoesResposta onde para cada botão é adicionado um evento de clique que chama a função responderPergunta().</p>
+		<div align="center">
+			<img align="center" src="https://github.com/WillianOL/Quiz-Javascript/assets/112639055/c69ef859-1b79-4434-b239-7a84c823946a" width="650px">
+		</div>
+		&nbsp;
+		<p>Nela, primeiro peguei o valor do botão clicado. Fiz isso pegando o valor do atributo "data", onde o botão de verdadeiro possui o valor "true" e o de falso possui o valor "false"</p>
+		<div align="center">
+			<img align="center" src="https://github.com/WillianOL/Quiz-Javascript/assets/112639055/8fe36cd5-0651-4a6e-8084-f33b4f2b5875" width="650px">
+		</div>
+		&nbsp;
+		<p>Seguindo, é criado a variável conteinerDaPergunta que seleciona toda a section da pergunta. Depois, são criadas duas variáveis usando o construtor new Audio(), são elas: </p>
+		<ul>
+			<li><strong>somDeErrado</strong> - armazena o áudio que será tocado quando a reposta for incorreta.</li>
+			<li><strong>somDeCorreto</strong> - armazena o áudio que será tocado quando a resposta for correta.</li>
+		</ul>
+		<div align="center">
+			<img align="center" src="https://github.com/WillianOL/Quiz-Javascript/assets/112639055/a96a1ce5-284a-453b-8d71-4193c5f051fa" width="650px">
+		</div>
+		&nbsp;
+		<p>Para fazer a validação da resposta utilizei uma estrutura condicional, utilizando a seguinte condição: Se o valor do botão clicado for igual ao valor da resposta, primeiro remove a classe "respostaErrada" do conteiner, depois dá um ".play()" no audio de correto e executa novamente a função "colocarPergunta()" para seguir para a proxima pergunta. Se não, ou seja, se a reposta for errada adiciona a classe "respostaErrada" no conteiner e da um ".play()" no áudio de errado.</p>
+		<div align="center">
+			<img align="center" src="https://github.com/WillianOL/Quiz-Javascript/assets/112639055/e7c8c039-0a67-43ae-a3b5-fa6f7927583a" width="650px">
+		</div>
+	</article>
+ 	<artcle>
+		<h4>Função recomecarQuiz()</h4>
+		<p>A função recomecarQuiz serve para exibir a tela de recomaçar o quiz assim que a ultima pergunta for respondida. Ela é chamada na função colocarPergunta e tem como parâmetro o href da página HTML "paginaDeRecomecar". Sendo assim, é atribuido esse href no botão de verdadeiro. Quando é clicado, o código trocarDePagina é acionado trocando a página.</p>
+		<div align="center">
+			<img align="center" src="https://github.com/WillianOL/Quiz-Javascript/assets/112639055/251287a6-8229-457e-8c54-cf16ef32ecfa" width="650px">
+		</div>
+	</artcle>
 </section>
 
 
